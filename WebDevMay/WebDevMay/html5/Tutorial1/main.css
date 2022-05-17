@@ -9,5 +9,9 @@ table, th, td {
     font-family: Arial, Helvetica, sans-serif;
   }
  tbody tr:hover {
-    background-color: #dddddd !important;
+    background-color: #ddd !important;
+ }
+
+ button:hover {
+    background-color:#3d8b40 !important;
  }
