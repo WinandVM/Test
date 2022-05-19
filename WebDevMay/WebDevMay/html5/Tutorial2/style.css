@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .winand {
     list-style-type: none;
     display: inline !important;
@@ -20,13 +23,19 @@ a {
     margin: 10px;
 }
 #lijst {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     padding-inline-start: 0px !important;
     text-align: center;
     background-color: black;
     margin-top: -10px !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 i{
     color:white;
+}
+#home {
+    margin-block-start: 3em;
 }
