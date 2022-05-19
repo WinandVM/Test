@@ -89,3 +89,10 @@ label {
     margin-bottom: 1em;
     font-weight: bold;
 }
+main#gallery{
+    background-color: #f0f8fc;
+    padding: 18px;
+}
+#youtube {
+    margin-top: 10px;
+}
