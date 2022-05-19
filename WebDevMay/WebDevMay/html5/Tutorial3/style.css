@@ -93,6 +93,9 @@ main#gallery{
     background-color: #f0f8fc;
     padding: 18px;
 }
+iframe {
+    border:none;
+}
 @media screen and (min-width: 1440px) {
     #youtube {
     margin-top: 10px;
