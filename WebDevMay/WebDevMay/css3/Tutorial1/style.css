@@ -1,0 +1,23 @@
+fieldset {
+border-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000) 1% stretch;
+border-width: 10px;
+height: 100vh;
+}
+/* #main {
+    border-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000) 1% stretch;
+    border-width: 10px;
+    
+    } */
+
+option[value="GTX1060"] {
+    color:blue;
+    }
+
+label[name="computer1"]{
+        color:red;
+    }
+
+body {
+    background: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+    background-size: cover;
+}
