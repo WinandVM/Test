@@ -1,6 +1,7 @@
 a {
     text-decoration: none;
     color: black;
+    padding: 10px;
 }
 li {
     padding-left:10px;
@@ -17,13 +18,15 @@ li {
     margin-top: 0px !important;
     justify-content: space-between;
     align-items: end;
+    margin-left:50px;
+    margin-right:20px;
 }
 menu > .img1 {
     float: left;
     padding-top: 60px !important;
 }
 .headerblock {
-    background-color: rgb(195,195,195);
+    background-color: rgb(215,215,215);
     margin-top: -10px;
     margin-left: -10px;
     padding-bottom: 20px !important;
@@ -31,20 +34,22 @@ menu > .img1 {
 }
 .menu2 {
     float:right;
-    margin-right:20px;
+    margin-right:10px;
     margin-bottom:0px;
 }
 h1, p {
-    color: rgb(80, 80, 80)
+    color: rgb(100, 100, 100)
 }
 .div2 {
     display: flex;
-    margin-left: 20px;
     margin-top: 20px;
     justify-content: space-between;
+    margin-left:70px;
+    margin-right:50px;
 }
 .img2 {
     float:left !important;
+    margin-right:0px !important;
 }
 h1 {
     font-size: 30px;
@@ -55,9 +60,9 @@ h1 {
 .services{
     display:flex;
     width:auto;
-    justify-content: space-around;
-    margin-right:450px;
-    margin-left:450px;
+    justify-content: space-between;
+    margin-right:50px;
+    margin-left:50px;
 }
 /* .services > img {
     padding:30px;
@@ -65,9 +70,9 @@ h1 {
 .recentwork{
     display:flex;
     align-items: center;
-    justify-content: space-around;
-    margin-right:450px;
-    margin-left:450px;
+    justify-content: space-between;
+    margin-right:50px;
+    margin-left:50px;
 }
 .recentwork > img {
     display:flex;
@@ -75,25 +80,37 @@ h1 {
 
 footer {
     position:absolute;
-    bottom:0;
     right:0;
     width:100%;
-    background-color: rgb(195,195,195);
+    background-color: rgb(215,215,215);
     margin-bottom: 0px;
-    display:flex;
-}
-.footermenu {
-    padding: 10px;
-}
-footer {
     display:flex;
     justify-content: space-between;
     align-items: center;
     height:60px;
+    margin-top: auto;
+}
+.footermenu {
+    padding-right: 10px;
+    padding-left: 50px;
 }
 .copyrightfooter{
-    padding-right:10px;
+    padding-right:50px;
  }
  body {
      margin-right:0px;
+     font-family: Arial, Helvetica, sans-serif;
  }
+ a:hover {
+background-color: rgb(180,180,180);
+}
+.section2 {
+    margin-left:8px;
+}
+.uwma {
+    line-height:1.6;
+}
+.twitterflex {
+    margin:auto;
+    width:1000px;
+}
