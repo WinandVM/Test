@@ -66,13 +66,98 @@ body {
     background-color: white;
     padding: 5px;
 }
+
 hr {
     margin-top: 20px;
 }
+
 h1 {
-    color:white
+    color: white;
 }
+
 .menu {
     padding-left: 0px;
     height: 50px;
+}
+
+.main {
+    text-align: center;
+    padding: 1em;
+}
+
+#user_records {
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+th,
+td {
+    border: 1px black solid;
+    padding: 0.3rem;
+}
+
+th {
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+
+/* #user_records>tbody>tr>td:hover {
+    background-color: rgb(35, 35, 35);
+    color: white;
+} */
+#user_records>tbody>tr:hover {
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: grey;
+}
+
+.boxcontainer>div {
+    width: 100px;
+    height: 100px;
+    color: white;
+    padding: 3px;
+    position:absolute;
+}
+
+.box1 {
+    background-color: blue;
+    left: 10px;
+    top: 10px;
+    transform:rotate(10deg);
+}
+
+.box2 {
+    background-color: purple;
+    left: 20px;
+    top: 20px;
+    transform:rotate(20deg);
+}
+
+.box3 {
+    background-color: red;
+    left: 30px;
+    top: 30px;
+    transform:rotate(30deg);
+}
+
+.box4 {
+    background-color: forestgreen;
+    left: 40px;
+    top: 40px;
+    transform:rotate(40deg);
+}
+footer {
+    background-color: black;
+    color: white;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+.boxcontainer {
+    position:relative;
+    z-index: 1;
 }
