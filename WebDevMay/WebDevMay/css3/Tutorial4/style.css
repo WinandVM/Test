@@ -1,0 +1,85 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    padding: 3px;
+    color: aliceblue;
+    text-align: center;
+}
+
+nav {
+    background-color: blue;
+    padding: 3px;
+    color: aliceblue;
+}
+
+nav>ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav>ul>li {
+    display: inline;
+    font-size: 20pt;
+}
+aside {
+    background-color: burlywood;
+    padding: 3px;
+    width: 23.6%;
+    float:left;
+    margin:5px;
+}
+aside>ul {
+    list-style-type: none;
+}
+aside>ul>li {
+    font-size: 18pt;
+}
+main {
+    background-color: brown;
+    width: 73%;
+    float:right;
+    margin: 5px;
+    color:white;
+    padding: 5px;
+}
+footer {
+    background-color: black;
+    clear: both;
+    padding: 10px;
+    color:white;
+    text-align: center;
+    margin: 5px;
+}
+article {
+    background-color: yellow;
+    color:black;
+
+}
+article > p {
+    column-count: 3;
+}
+.box {
+    background-color: whitesmoke;
+    height: 240px;
+    color:black;
+    text-align: center;
+    animation: myAnimation 2s infinite;
+}
+.gallery-container {
+    display:grid;
+    grid-template-columns: 240px 240px 240px;
+    grid-gap:240px;
+}
+@keyframes myAnimation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
