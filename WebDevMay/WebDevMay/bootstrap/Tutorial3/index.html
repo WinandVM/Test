@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Order form</h1>
+        <div class="row">
+        <div class="col input-group mb-2">
+            <label class="input-group-text">First name</label>
+            <input type="text" class="form-control" required>
+        </div>
+        <div class="col input-group mb-2">
+            <label class="input-group-text">Last name</label>
+            <input type="text" class="form-control" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col input-group mb-2">
+            <label class="input-group-text">Email address</label>
+            <input type="email" class="form-control" required>
+        </div>
+        <div class="col input-group mb-2">
+            <label class="input-group-text">Password (min. 8 characters)</label>
+            <input type="password" class="form-control" minlength="8" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg input-group mb-2">
+            <label class="input-group-text">Address</label>
+            <input type="text" class="form-control" required>
+        </div>
+        <div class="col-lg input-group mb-2">
+            <label class="input-group-text">City</label>
+            <input type="text" class="form-control" required>
+        </div>
+        <div class="col-lg input-group mb-2">
+            <label class="input-group-text">Province</label>
+            <select class="form-select" required>
+                <option value="antwerpen">Antwerpen</option>
+                <option value="limburg">Limburg</option>
+                <option value="oostvl">Oost-Vlaanderen</option>
+                <option value="westvl">West-Vlaanderen</option>
+                <option value="henegouwen">Henegouwen</option>
+                <option value="luik">Luik</option>
+                <option value="luxemburg">Luxemburg</option>
+                <option value="namen">Namen</option>
+                <option value="Waals-Brabant">Waals-Brabant</option>
+            </select>
+        </div>
+        <div class="col-lg input-group mb-2">
+            <label class="input-group-text">Postal code</label>
+            <input type="number" class="form-control" min="999" max="9992" required>
+        </div>
+    </div>
+        <div class="input-group mb-2">
+            <label class="input-group-text">Preferred payment option</label>
+            <div class="form-check m-2">
+                <input type="radio" class="form-check-input" name="payment">
+                <label class="form-check-label" required>Bancontact</label>
+            </div>
+            <div class="form-check m-2">
+                <input type="radio" class="form-check-input" name="payment">
+                <label class="form-check-label">Visa/Mastercard</label>
+            </div>
+            <div class="form-check m-2">
+                <input type="radio" class="form-check-input" name="payment">
+                <label class="form-check-label">Payconiq</label>
+            </div>
+        </div>
+        <div class="input-group mb-2">
+            <label class="input-group-text">Select your favourite fastfood</label>
+            <select class="form-select" required>
+                <option value="pizza">Pizza</option>
+                <option value="frenchfries">French fries</option>
+                <option value="kebab">Kebab</option>
+            </select>
+        </div>
+        <div class="input-group mb-2">
+            <label class="input-group-text">Write a comment</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-success">Submit</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
