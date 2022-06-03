@@ -4,3 +4,9 @@
         padding-right: 50px !important;
     }
 }
+.navbar-nav {
+    text-align: right;
+}
+li>a:hover {
+    font-weight: 600;
+}

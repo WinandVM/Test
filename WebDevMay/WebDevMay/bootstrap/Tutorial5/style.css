@@ -1,0 +1,23 @@
+.card {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+.carousel-item > img {
+    height: 1000px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.webdev-body {
+    background-image: url("https://i.gifer.com/YPnA.gif");
+}
+.webdev-footer {
+    background-color: transparent !important;
+}
+.webdev-body>h1 {
+color:azure;
+border: 5px solid white;
+font-size: 150px;
+padding: 10px;
+}
