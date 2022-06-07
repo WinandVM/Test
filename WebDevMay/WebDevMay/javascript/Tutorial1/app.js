@@ -98,7 +98,7 @@ var money=0;
 
 var myRule = age>=18;
 var mySecondRule = money >=1;
-result = myRule ? (mySecondRule)? "Yes, he can have a drink": "No, he needs money": "No, he's underage";
+result = myRule ? (mySecondRule)? "Yes, he can have a drink": "No, he needs money": "No, he's underage"; //Nesting is dus mogelijk. De antwoorden zijn dan (yes vraag1 yes vraag2, yes vraag1 no vraag2, no vraag1)
 
 
 console.log(result);
