@@ -12,6 +12,7 @@ li {
 
 .img1 {
     padding-left: 20px;
+    margin-top: 20px;
 }
 .menu {
     display: flex !important;
@@ -21,10 +22,6 @@ li {
     margin-left:50px;
     margin-right:20px;
 }
-menu > .img1 {
-    float: left;
-    padding-top: 60px !important;
-}
 .headerblock {
     background-color: rgb(215,215,215);
     margin-top: -10px;
@@ -33,7 +30,6 @@ menu > .img1 {
 
 }
 .menu2 {
-    float:right;
     margin-right:10px;
     margin-bottom:0px;
 }
@@ -74,16 +70,12 @@ h1 {
     margin-right:50px;
     margin-left:50px;
 }
-.recentwork > img {
-    display:flex;
-}
 
 footer {
     position:absolute;
     right:0;
     width:100%;
     background-color: rgb(215,215,215);
-    margin-bottom: 0px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -113,7 +105,4 @@ background-color: rgb(180,180,180);
 .twitterflex {
     margin:auto;
     width:1000px;
-}
-.icon {
-    background-color:greenyellow;
 }
