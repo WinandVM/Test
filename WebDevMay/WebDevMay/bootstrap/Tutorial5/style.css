@@ -7,7 +7,7 @@
 .carousel-item > img {
     height: 1000px;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 50% 75%;
 }
 .webdev-body {
     background-image: url("https://i.gifer.com/YPnA.gif");
