@@ -58,7 +58,7 @@ result=MyText2.replaceAll(" ","") //Hier worden alle spaties verwijderd
 result=MyText2.trim().replace(/  +/g, ' '); //Hier worden de spaties langs de zijkant verwijderd (trim), en dan worden de spaties tussen de woorden omgezet in enkele spaties
 
 // match() method
-result=MyText.match(/lorem/); //vindt wel enkel de eerste
-result=MyText.match(/lorem/g) //vindt ze allemaal
+result=MyText.match("lorem"); //vindt wel enkel de eerste (en zet het om in een array, waarbij het ook aangeeft waar het gevonden is)
+result=MyText.match(/lorem/g); //vindt ze allemaal (en zet ze om in een array, maar geeft niet aan waar in de string ze gevonden zijn)
 
 console.log(result);
