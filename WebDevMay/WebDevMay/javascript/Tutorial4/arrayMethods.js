@@ -93,14 +93,14 @@ let posts = [{ //voorbeeld met objects in array
       "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
     }]
 
-    // result=posts.filter(value=> {
-    //     return value.id === 3; //we nemen enkel de post met de id=3
-    // })
+    result=posts.filter(value=> {
+        return value.id === 3; //we nemen enkel de post met de id=3
+    })
     
 
-    function FindPostById(id){
-        return posts.filter(value=>value.id===id);
-    }
-result=FindPostById(5);
+//     function FindPostById(id){
+//         return posts.filter(value=>value.id===id);
+//     }
+// result=FindPostById(5);
 
 console.log(result);
