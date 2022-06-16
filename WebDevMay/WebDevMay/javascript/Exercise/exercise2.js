@@ -232,14 +232,17 @@ var users = [
 ]
 
 //filter user data
-const filterFunction = users.filter(function (user) {
-    return user.id === 5
-});
+// const filterFunction = users.filter(function (user) {
+//     return user.id === 5
+// });
 
 // filterFunction.forEach(function(user){ //we gebruiken forEach voor als er meerdere objecten gevonden worden in de vorige filter
 //     user.address.city="Brussel" //hier updaten we een property van een object
 //     console.log(`fullname: ${user.name}\nusername: ${user.username}\nemail: ${user.email}\ncity: ${user.address.city}\ngeoLocation: ${user.address.geo.lat}, ${user.address.geo.lng}`) //dus we filteren in een array op een object (address), en daarbinnen zoeken we op een property (city) of een object (geo) en daarbinnen een property (lat). \n zet dingen op een nieuwe lijn
 //   });
+
+
+
 
 // const identifier = [{
 //     name: "Winant Van Wierbeek", username: "Fakke", email: "winant.vanwierbeek@msn.com", address: {
@@ -256,21 +259,86 @@ const filterFunction = users.filter(function (user) {
 //     console.log(`name: ${user.name}\nusername: ${user.username}\nemail: ${user.email}\nstreet: ${user.address.street}\nsuite: ${user.address.suite}\ncity: ${user.address.city.toUpperCase()}\nzipcode: ${user.address.zipcode}\nskills: ${user.skills.toString()}`);
 // });
 
-function ChangeLetterToUpperCase(){
-    //changing username letters to upper case
-    users.forEach(function(user){
-        user.name = user.name.toUpperCase();
-        })
-    return users;
-    }
 
-function FilterData(){
-//filter here
-return users.filter(function(param){
-    return param.id == 5;
-});
+
+
+// function ChangeLetterToUpperCase(){
+//     //changing username letters to upper case
+//     users.forEach(function(user){
+//         user.name = user.name.toUpperCase();
+//         })
+//     return users;
+//     }
+
+// function FilterData(){
+// //filter here
+// return users.filter(function(param){
+//     return param.id == 5;
+// });
+// }
+
+
+// console.log(FilterData(ChangeLetterToUpperCase())); //Dit logt het resultaat van de filter op users, en users werd aangepast door ChangeLetterToUppercase
+
+//dit is de code van Atilla; doet hetzelfde
+// function FilterData(){
+//     // filter here
+// return users.filter(function(param){
+// return param.id == 5;
+// });
+// }
+
+// function ChangeLetterToUpperCase(filteredData){
+//     // changing username letters to upper case
+//    filteredData.forEach(function(user){
+//         user.name = user.name.toUpperCase()
+//    })
+//    return filteredData
+// }
+
+// function PrinterService(getFilteredData){
+//     const getResult = FilterData(ChangeLetterToUpperCase(getFilteredData))
+//    console.log(getResult)
+// }
+
+// PrinterService(users);
+
+
+//reduce() method - reduces all array items to one (van links naar rechts). reduceRight() doet dat van rechts naar links. Handig om dingen bijvoorbeeld op te tellen
+var numbers = [55,2,35,14,87,15];
+
+// let result = numbers.reduce(function(total, currentValue){
+// return total + currentValue
+// })
+// console.log(result);
+
+// result = numbers.reduceRight(function(total, currentValue){
+//     return total + currentValue
+//     })
+
+
+var student = {
+    name:"Joe",
+    scores:[55,777,88,99,455,44]
 }
 
+//fill() method - vervangt elk element met iets
 
-console.log(FilterData(ChangeLetterToUpperCase())); //Dit logt het resultaat van de filter op users, en users werd aangepast door ChangeLetterToUppercase
+// result=numbers.fill(5)
+// console.log(result)
+
+//flat() method - removes nesting
+var nestedArray = [55,777,88,99,455,44,[5,8,6,[7,8,9, [8,5,10]]]]
+result=nestedArray.flat() //we verwijderen één nested array
+console.log(result);
+result=nestedArray.flat(2) // we verwijderen twee nested arrays
+console.log(result);
+result=nestedArray.flat(3) // we verwijderen drie nested arrays
+console.log(result);
+
+//Spread operator - laat ons toe alles of een stuk van een array te kopiëren
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo]; //voegt deze twee samen. Eigenlijk is dit hetzelfde als concat
+console.log(numbersCombined);
 
