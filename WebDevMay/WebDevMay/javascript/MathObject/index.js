@@ -21,7 +21,7 @@ result=Math.random(); // 0 tot 0.999999999
 result=(Math.random()*5); // tussen 0 en 4.99999999999
 result=(Math.random()*10).toFixed(); //0, 1, 2, 3, 4 of 5 (kan ook met Math.round of Math.floor)
 
-function GetRandomNumberRange(min,max){
+function GetRandomNumberRange(min,max){ //Om een willekeurig afgerond getal te hebben tussen één cijfer en het andere
     return Math.round(Math.random()*(max-min)+min);
 }
 
