@@ -104,22 +104,75 @@
 
 
 //hier gaan we een oefening maken op basis van https://jsonplaceholder.typicode.com/users. De onderstaande is mijn poging
-const users = []
+// const users = []
 
-//step 1 get all original data
-fetch("https://jsonplaceholder.typicode.com/users")
-    .then(result => result.json())
-    .then(data => data)
-    //step 2 extract specific properties from user
-    .then(data => {
+// //step 1 get all original data
+// fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(result => result.json())
+//     .then(data => data)
+//     //step 2 extract specific properties from user
+//     .then(data => {
 
-        data.map(user => {
-            const username = user.username;
-            const email = user.email;
-            const object = { username, email };
-            users.push(object); //step 3 push it to a new array
+//         data.map(user => {
+//             const username = user.username;
+//             const email = user.email;
+//             const object = { username, email };
+//             users.push(object); //step 3 push it to a new array
 
-        })
-        return users
+//         })
+//         return users
+//     })
+//     .then(users => console.log(users)) //step 4 console the modified array
+
+
+    //dit is Atilla zijn ding
+    async function GetData(){
+        let response=await fetch ("https://jsonplaceholder.typicode.com/users");
+        let data = await response.json()
+        return data
+    }
+
+  
+
+    GetData()
+    .then(data=>{
+        let users=[]
+        data.map(data=>{
+        const object={
+            id:data.id,
+            name:data.name,
+            username:data.username,
+            email:data.email
+        }
+        users.push(object)
     })
-    .then(users => console.log(users)) //step 4 console the modified array
+    return users
+    })
+    .then(data=>console.log(data))
+
+    //nog een andere mogelijkheid
+    GetData()
+    .then(data=>{return data.map(({id,name,username,email})=>({id,name,username,email}))})
+    .then(data=>console.log(data))
+
+    //hier wat verklarende stuff om dingen te extracten uit een array
+    const Testdata=['a','b','c','d','e'];
+    // const [x,y,z] = Testdata
+    // console.log(x,y,z) //logt de eerste drie variables
+    const [x,y,z,a,b] = Testdata;
+    console.log(y,z,b); //logt de tweede, de derde en de vijfde variable
+
+    const obj={
+        id:1,
+        name:'atilla',
+        username:'root'
+    }
+    const {id,name,username}=obj;
+    console.log(username);
+
+
+    fetch ('dontreadme.txt') //als het niet van een url is
+    .then (res=>res.text())
+    .then (data=>{
+        console.log(data)
+    })
