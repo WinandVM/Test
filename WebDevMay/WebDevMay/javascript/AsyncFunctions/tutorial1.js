@@ -24,7 +24,7 @@
 // createPost({
 //     id: 3,
 //     title:"Counter Strike offensive"
-// },getLastGames)
+// },getLastGames) //de callback functie die hier als argument gebruikt wordt is dus getLastGames()
 
 
 // getLastGames()
