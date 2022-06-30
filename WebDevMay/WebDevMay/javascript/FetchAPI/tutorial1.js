@@ -2,18 +2,16 @@
 //get request: we downloaden data van een website bv. door ernaar toe te surfen
 //post request: we zenden info (bv. bij een login)
 //delete request: we verwijderen info (bv. gegevens verwijderen bij een sociaal netwerk)
-//patch/put request (doen allebei hetzelfde; kies best patch): we veranderen bestaande data
-//Insomnia tool (insomnia.rest/download) is een tool om http requests te testen. We moeten ook aangeven welke soort method we willen checken + daarna moeten we een nodemon-extension downloaden door npm i json-server -g in te voeren in een terminal
+//patch/put request (doen allebei hetzelfde; kies best patch): we veranderen bestaande data. Als je één property wil updaten en je doet dat met put, dan verliezen we de andere properties; we moeten dus het hele object kopiëren en daar dan iets in veranderen. Als we dat met patch doen, gebeurt dat niet. We kunnen dus gewoon een property veranderen zonder de rest te schrijven
+//Insomnia tool (insomnia.rest/download) is een tool om http requests te testen. We moeten ook aangeven welke soort method we willen checken + daarna moeten we een nodemon-extension downloaden door npm i json-server -g in te voeren in een terminal in VScode
 
 // A JSON file is a file that stores simple data structures and objects in JavaScript Object Notation (JSON) format
 // {
-//     "api": [], "products": [] //zo starten we een server om front-end applications te testen, namelijk op de url homepage/API en de url homepage/products. Het is een fake API. Dan in een terminal (mag bash zijn) json-server en de filename zetten (in casu data.json)
+//     "api": [], "products": [] //zo starten we (in een JSON-file) een server om front-end applications te testen, namelijk op de url homepage/API en de url homepage/products. Het is een fake API. Dan in een terminal (mag bash zijn) json-server en de filename zetten (in casu data.json). Belangrijk: er mogen geen comments in een json-file staan
 
 // } //start automatisch op port number 3000. We kunnen ook een andere port kiezen (tussen 2000 en 6000) bv. json-server data.json (da's de file name) -p 5000. Daarna moeten we klikken op de home link die in de terminal gegeven wordt
 
 //control c cancelt een proces in een terminal
-
-//belangrijk, we mogen geen comments in een json-file zetten
 
 //als we een json-file aanpassen, moeten we ctrl+c gebruiken en de server opnieuw loaden. Gebruik het pijltje naar omhoog om de laatste comment opnieuw op te roepen, dan moeten we die niet opnieuw typen
 
@@ -26,7 +24,7 @@
 // 	"password": "root123"
 // } (je krijgt dan een succes code: 201 created <-> get request die succesvol is, heeft een 200 ok). Om te kijken wat er gelogd is, moet je een get request naar dezelfde url sturen.
 
-//als we dan een specifiek ding willen, sturen we een get request naar .../api/1 (de data met ID number 1). We voegen dus parameters toe. Idem voor delete: we geven de parameter als we een specifieke ID willen deleten. Zelfde met patch: we moeten aangeven welke data entry we veranderen
+//als we dan een specifiek ding willen accessen, sturen we een get request naar .../api/1 (de data met ID number 1). We voegen dus parameters toe. Idem voor delete: we geven de parameter als we een specifieke ID willen deleten. Zelfde met patch: we moeten aangeven welke data entry we veranderen
 
 //hoe moeten we nu de data verkrijgen in javascript? Door een fetch method, wat een async function is 
 // fetch("http://localhost:5000/api") //voor get requests is maar één argument nodig, namelijk de url
@@ -80,7 +78,7 @@
 // const TbodyResult=document.getElementById("result") //we runnen dit in global scope, maar kan ook enkel in local scope als we dit maar in één functie moeten gebruiken (wat hier in feite het geval is)
 
 // //fetching data from server
-// let getUsers = new Promise((resolve, reject) => { //hetzelfde, maar met promise chain. Die parameternamen van de Promise zijn fixed
+// let getUsers = new Promise((resolve, reject) => { //hetzelfde, maar met promise chain. Die parameternamen van de Promise zijn niet fixed
 //     fetch('http://localhost:5000/api')
 //     .then(res=>res.json())
 //     .then(data => {

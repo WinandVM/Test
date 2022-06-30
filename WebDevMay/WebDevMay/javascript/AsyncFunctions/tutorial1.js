@@ -100,7 +100,7 @@ console.log(Keeper1("Hello friend")) //de promise wijst erop dat er data beloofd
 
 
 
-let promiseMe = new Promise((resolve, reject) => { //dit print een promise uit met een delay
+let promiseMe = new Promise((resolve, reject) => { //dit print een promise uit met een delay. In principe kunnen we de reject ook weglaten
     setTimeout(() => {
         resolve("Helo friend, I promise you that I will be back in 3 seconds")
     }, 3000)
