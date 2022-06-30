@@ -16,7 +16,7 @@
 // function createPost(post,callback){
 //     setTimeout(()=>{
 //         posts.push(post)
-//         callback()    //we gebruiken de callback om ervoor te zorgen dat de output van de getLastGames gebruikt wordt in de createPost. Dit hebben we nodig, want anders lopen de functies createPost en getPosts tegelijkertijd, en worden enkel de eerste twee games getoond
+//         callback()    //we gebruiken de callback om ervoor te zorgen dat de output van de getLastGames gebruikt wordt in de createPost. Dit hebben we nodig, want anders loopt de functie getLastGames vooraleer de functie createPost al gelopen is. Daardoor zouden er maar twee games getoond worden in plaats van drie
 //     },3000)
 // }
 
@@ -110,7 +110,7 @@ let promiseMe2 = new Promise((resolve, reject) => {
     resolve("Hello friend, this is a second promise")
 })
 
-let getPromiseResult = Promise.all([promiseMe, promiseMe2]) //zet twee promises in één array 
+let getPromiseResult = Promise.all([promiseMe, promiseMe2]) //dit geeft aan dat promiseMe2 niet wacht op promiseMe om uit te voeren, maar ze voeren tegelijkertijd uit. getPromiseResult voert dan pas uit wanneer beide promies zijn uitgevoerd
 console.log(getPromiseResult)
 getPromiseResult
     .then(response => { //hier geven we aan dat we moeten wachten op getPromiseResult (want die heeft een delay). Dus we wachten op een resolve
